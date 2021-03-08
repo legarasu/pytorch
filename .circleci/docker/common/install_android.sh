@@ -95,6 +95,8 @@ export GRADLE_LOCAL_PROPERTIES=gradledeps/local.properties
 rm -f $GRADLE_LOCAL_PROPERTIES
 echo "sdk.dir=/opt/android/sdk" >> $GRADLE_LOCAL_PROPERTIES
 echo "ndk.dir=/opt/ndk" >> $GRADLE_LOCAL_PROPERTIES
+echo "android.useAndroidX=true" >> $GRADLE_LOCAL_PROPERTIES
+echo "android.enableJetifier=true" >> $GRADLE_LOCAL_PROPERTIES
 
 chown -R jenkins /var/lib/jenkins/gradledeps
 chgrp -R jenkins /var/lib/jenkins/gradledeps
